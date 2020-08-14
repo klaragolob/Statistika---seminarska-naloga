@@ -30,7 +30,7 @@ enacba = @(x) log(x)-log(povprecje) + vsotalogaritmov/n - psi(x);
 alpha2 = fzero(enacba, 1)
 lambda2 = alpha2 / povprecje
 
-gama1 = @(x) ((lambda1^alpha1)*(log(x).^(alpha1-1)).*exp(-lambda1*x))/gamma(alpha1);
+gama1 = @(x) ((lambda1^alpha1)*(x.^(alpha1-1)).*exp(-lambda1*x))/gamma(alpha1);
 gama2 = @(x) ((lambda2^alpha2)*(x.^(alpha2-1)).*exp(-lambda2*x))/gamma(alpha2);
 % figure
 % hold on
@@ -47,10 +47,11 @@ for i=1:n
     indeks = round((cas-min(logpodatki))/logl)+1;
     logst(indeks) = logst(indeks)+1;
 end
-logk = size(logl);
+logk = length(logst)
+logl
 x = 0:l:(logk*l-1);
-gama1 = @(x) ((lambda1^alpha1)*(x.^(alpha1-1)).*exp(-lambda1*x))/gamma(alpha1);
+length(x)
+size(logst)
 figure
 hold on
-bar(x,logst/sum(logst*logl), 'b')
-%saveas(gcf,'log_histogram3.png')
+bar(0:logl:(length(logl)*logl-1),logst/sum(logst*logl))

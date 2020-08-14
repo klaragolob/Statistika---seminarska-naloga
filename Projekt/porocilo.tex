@@ -42,7 +42,7 @@
 \large{1. NALOGA}
 \\
 \\
-V datoteki Kibergrad se nahajajo informacije o 43.886 družinah, ki stanujejo v mestu Kibergrad. Za vsako družino so zabeleženi naslednji podatki (ne boste potre- bovali vseh):
+V datoteki Kibergrad se nahajajo informacije o 43.886 družinah, ki stanujejo v mestu Kibergrad. Za vsako družino so zabeleženi naslednji podatki (ne boste potrebovali vseh):
 \begin{itemize}
 \item Tip družine (od 1 do 3)
 \item Število članov družine
@@ -59,7 +59,7 @@ Nalogo sem reševala s pomočjo programskega jezika R. Zraven je priložena dato
 \begin{equation*}
 \hat{\mu} = \frac{1}{n} \sum_{i=1}^{n} x_{i}
 \end{equation*}
-Povprečno število otrok na podlagi vzorca  = $0.92$
+Povprečno število otrok na podlagi vzorca  = $1.025$
 
 \item Ocenite standardno napako in postavite $95\%$ interval zaupanja. \\
 Varianca:
@@ -70,32 +70,45 @@ Standardna napaka:
 \begin{equation*}
 \widehat{ se(\hat{\sigma}}) = \sqrt{\frac{\hat{\sigma}^2}{n} \left(1-\frac{n}{N}\right) }
 \end{equation*}
-Standardna napaka izračunana po zgornji formuli $ = 0.07803921$ \\
-Interval zaupanja $= [0.767046, 1.072954]$
+Standardna napaka izračunana po zgornji formuli $ = 0.07579955$ \\
+Interval zaupanja $= [0.8764356, 1.173564]$
 
 \item Vzorčno povprečje in ocenjeno standardno napako primerjajte s populacijskim povprečjem in pravo standardno napako. Ali interval zaupanja iz prejšnje točke pokrije populacijsko povprečje? \\ \\
 Vzorčno povprečje = 0.92 \\
 Populacijsko povprečje =  0.9479333 \\
-Ocena standardne napake vzorca =  0.07803921 \\
+Ocena standardne napake vzorca =  0.07579955 \\
 Standardna napaka populacije =  0 \\
-Razlika vzorčnega in populacijskega povprečja = 0.09 \\
-Razlika standardnih napak = 0.07803921 \\ \\
-Interval zaupanja iz prejšne točke pokrije populacijsko povprečje, saj je $0.83 \in [0.7668411, 1.053159]$
+Razlika vzorčnega in populacijskega povprečja = 0.07706672 \\
+Razlika standardnih napak = 0.07579955 \\ \\
+Interval zaupanja iz prejšne točke pokrije populacijsko povprečje, saj je $0.9479333 \in [0.8764356, 1.173564]$
 
 \item Vzemite še 99 enostavnih slučajnih vzorcev in prav tako za vsakega določite $95\%$ interval zaupanja. Narišite intervale zaupanja, ki pripadajo tem 100 vzorcem. Koliko jih pokrije populacijsko povprečje? \\ \
 
-97 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje.
+95 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje, ker se lahko vidi tudi na sliki.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{Intervali_zaupanja200.png}
+\label{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 200}
+\end{figure}
 
 \item Izračunajte standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev. Primerjajte s pravo standardno napako za vzorec velikosti 200. \\ \\
-Standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev = 0.09010932 \\
-Standardna napaka za vzorec velikosti 200 = 0.07803921 \\
-Razlika = 0.01207011 
+Standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev = 0.08253901 \\
+Standardna napaka za vzorec velikosti 200 = 0.07579955 \\
+Razlika = 0.006739461 
 
 \item Izvedite prejšnji dve točki še na 100 vzorcih po 800 družin. Primerjajte in razložite razlike s teorijo vzorčenja. \\ \
 
-93 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje.
-
+96 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje.
+Standardni odklon vzorčnih povprečij za 100 dobljenih vzorcev veliksti 800 = 0.04111221 \\
+Standardna napaka za vzorec velikosti 800 = 0.03928324 \\
+Razlika = 0.001828971
+Rezultati so malo bolj natančni, saj smo izbrali večji vzorec in zato dobili boljše tezultate. 
+\begin{figure}[h!]
+\centering
+\includegraphics[width=11cm]{Intervali_zaupanja800.png}
+\label{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 800}
+\end{figure}
 \end{enumerate}
 
 \large{2. NALOGA}
@@ -158,7 +171,7 @@ V datoteki ZarkiGama se nahajajo podatki o časovnih razmikih med 3.935 zaznanim
 \label{Histogram medprehodnih časov}
 \end{figure}
 
-Glede na dobljeni histogram, se zdi primerna porazdelitev gama.
+Glede na dobljeni histogram, je gama porazdelitev primerna.
 
 \item Ocenite parametra porazdelitve gama po metodi momentov in po metodi največjega verjetja. Primerjajte!
 
@@ -167,7 +180,7 @@ Po metodi momentov sta cenilki za $\alpha$ in $\lambda$
 $$\hat{\alpha} = \frac{\overline{X}^2}{\hat{\sigma}^2} \ \ \ \text{in} \ \ \ \hat{\lambda} = \frac{\overline{X}}{\hat{\sigma}^2} $$
 $$\overline{X} = 79.93522$$
 $$\hat{\sigma} = 79.45616$$
-$$\hat{\alpha} = 1.012095 \ \ \  \text{in} \ \ \ \hat{\lambda} = 0.01266144 $$
+$$\hat{\alpha} = 1.0121 \ \ \  \text{in} \ \ \ \hat{\lambda} =  0.0127 $$
 
 Po metodi najmanjših kvadratov, pa cenilki za $\alpha$ in $\lambda$ dobimo z naslednjima dvema izrazoma:
 $$n\log{\hat{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - n\frac{\Gamma'(\hat{\alpha})}{\Gamma(\hat{\alpha})}$$
@@ -177,22 +190,22 @@ Potem je
 $$n\log{\hat{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - nF(\hat{\alpha})$$
 
 Enačbo lahko rešimo s programom Matlab z uporabo funkcije psi in dobimo:
-$$\hat{\alpha} = 1.0052 \ \ \ \text{in} \ \ \ \hat{\lambda} = 0.0117$$
+$$\hat{\alpha} = 1.0263 \ \ \ \text{in} \ \ \ \hat{\lambda} = 0.0128$$
 
 \item Ocenjeni porazdelitvi dorišite na histogram. Je videti razumno?
-Na grafu je z rozno prikazana porazdelitev po metodi momentov in z modro porazdelitev po metodi največjega verjetja. Porazdelitvi se ujemata s histogramom.
+Na grafu je z roza barvo prikazana porazdelitev po metodi momentov in z modro barvo porazdelitev po metodi največjega verjetja. Porazdelitvi ujemata med sabo in s histogramom.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=10cm]{histogram_porazdelitve3.png}
 \label{Histogram prehodnih časov z ocenjenima porazdelitvama}
 \end{figure}
 
-\item Histogram z dorisanima gostotama narišite še na logaritemski lestvici. Le- stvico transformirajte le na abscisni osi, vendar pa ustrezno transformirajte tudi dorisani gostoti.
+\item Histogram z dorisanima gostotama narišite še na logaritemski lestvici. Lestvico transformirajte le na abscisni osi, vendar pa ustrezno transformirajte tudi dorisani gostoti.
 
 \begin{figure}[h!]
 \centering
-\includegraphics[width=9cm]{loghistogram3.png}
-\label{Histogram prehodnih časov z ocenjenima porazdelitvama}
+\includegraphics[width=9cm]{log_histogram3.png}
+\label{Histogram prehodnih časov na logaritemski lestvici}
 \end{figure}
 
 \item Je porazdelitev medprihodnih časov videti konsistentna s Poissonovim modelom, po katerem so ti časi porazdeljeni eksponentno? \\
