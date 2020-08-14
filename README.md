@@ -1,0 +1,1 @@
+# Seminarska naloga pri statistiki
