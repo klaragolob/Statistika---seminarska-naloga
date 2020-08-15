@@ -89,7 +89,7 @@ Interval zaupanja iz prejšne točke pokrije populacijsko povprečje, saj je $0.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=11cm]{Intervali_zaupanja200.png}
-\label{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 200}
+\caption{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 200}
 \end{figure}
 
 \item Izračunajte standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev. Primerjajte s pravo standardno napako za vzorec velikosti 200. \\ \\
@@ -97,17 +97,17 @@ Standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev = 0.0825390
 Standardna napaka za vzorec velikosti 200 = 0.07579955 \\
 Razlika = 0.006739461 
 
-\item Izvedite prejšnji dve točki še na 100 vzorcih po 800 družin. Primerjajte in razložite razlike s teorijo vzorčenja. \\ \
+\item Izvedite prejšnji dve točki še na 100 vzorcih po 800 družin. Primerjajte in razložite razlike s teorijo vzorčenja. \\ \\
 
-96 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje.
+96 intervalov zaupanja izmed 100ih pokrije populacijsko povprečje.\\
 Standardni odklon vzorčnih povprečij za 100 dobljenih vzorcev veliksti 800 = 0.04111221 \\
 Standardna napaka za vzorec velikosti 800 = 0.03928324 \\
-Razlika = 0.001828971
+Razlika = 0.001828971\\
 Rezultati so malo bolj natančni, saj smo izbrali večji vzorec in zato dobili boljše tezultate. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=11cm]{Intervali_zaupanja800.png}
-\label{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 800}
+\caption{Intervali zaupanja za 100 enostavnih slučajnih vzorcev velikosti 800}
 \end{figure}
 \end{enumerate}
 
@@ -126,7 +126,7 @@ Vzorčna povprečja stratumov: $\hat{\mu_1} = 98.3,  \hat{\mu_2} = 187.5,  \hat{
 \\
 Ocena populacijskega povprečja:
 \begin{equation*}
-\hat{\mu} = w_1\hat{\mu_1} + w_2 \hat{\mu_2} + w_3 \hat{\mu_3} =  0.4 \times 98.3 + 0.4 \times 187.5 + 0.2 \times 305.6 = 175.44
+\overline{X} = \hat{\mu} = w_1\hat{\mu_1} + w_2 \hat{\mu_2} + w_3 \hat{\mu_3} =  0.4 \times 98.3 + 0.4 \times 187.5 + 0.2 \times 305.6 = 175.44
 \end{equation*}
 Ocena kvadrata standardne napake:
  \begin{equation*}
@@ -162,63 +162,114 @@ Aproksimativni $95\%$ interval zaupanja:
 \end{equation*} 
 
 \large{3. NALOGA} \\ \\
-V datoteki ZarkiGama se nahajajo podatki o časovnih razmikih med 3.935 zaznanimi fotoni, torej medprihodni časi (v sekundah).
+V datoteki ZarkiGama se nahajajo podatki o časovnih razmikih med 3.935 zaznanimi fotoni, torej medprihodni časi (v sekundah). \\ \\
+Nalogo sem reševala s pomočjo programskega jezika Matlab, datoteka z imanom "naloga3.m" je priložena zraven. 
 \begin{enumerate}[label=(\alph*)]
 \item Naredite histogram medprihodnih časov. Se vam zdi, da je model s porazdelitvijo gama plavzibilen?
 \begin{figure}[h!]
 \centering
 \includegraphics[width=10cm]{histogram3.png}
-\label{Histogram medprehodnih časov}
+\caption{Histogram medprehodnih časov}
+\label{fig:hist}
 \end{figure}
 
-Glede na dobljeni histogram, je gama porazdelitev primerna.
+Glede na dobljeni histogram, ki je prikazan na sliki \ref{fig:hist}, je gama porazdelitev primerna.
 
 \item Ocenite parametra porazdelitve gama po metodi momentov in po metodi največjega verjetja. Primerjajte!
 
 $$X  \sim \Gamma(\alpha, \lambda)$$
-Po metodi momentov sta cenilki za $\alpha$ in $\lambda$
+Po metodi momentov sta cenilki za $\alpha$ in $\lambda$ (formuli sta iz strani 263 in 264 v knjigi Rice J.A. Mathematical statistics and data analysis (3rd)):
 $$\hat{\alpha} = \frac{\overline{X}^2}{\hat{\sigma}^2} \ \ \ \text{in} \ \ \ \hat{\lambda} = \frac{\overline{X}}{\hat{\sigma}^2} $$
 $$\overline{X} = 79.93522$$
 $$\hat{\sigma} = 79.45616$$
 $$\hat{\alpha} = 1.0121 \ \ \  \text{in} \ \ \ \hat{\lambda} =  0.0127 $$
 
-Po metodi najmanjših kvadratov, pa cenilki za $\alpha$ in $\lambda$ dobimo z naslednjima dvema izrazoma:
-$$n\log{\hat{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - n\frac{\Gamma'(\hat{\alpha})}{\Gamma(\hat{\alpha})}$$
-$$\hat{\lambda} = \frac{\hat{\alpha}}{\overline{X}}$$
+Po metodi najmanjših kvadratov, pa cenilki za $\alpha$ in $\lambda$ dobimo z naslednjima dvema izrazoma (iz strani 270 v knjigi Rice J.A. Mathematical statistics and data analysis (3rd)):
+$$n\log{\tilde{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - n\frac{\Gamma'(\tilde{\alpha})}{\Gamma(\tilde{\alpha})}$$
+$$\tilde{\lambda} = \frac{\tilde{\alpha}}{\overline{X}}$$
 Naj bo $F(x) = \frac{\Gamma'(x)}{\Gamma(x)}$
 Potem je 
-$$n\log{\hat{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - nF(\hat{\alpha})$$
+$$n\log{\tilde{\alpha}} - n\log{\overline{X}} + \sum_{i=1}^{n} \log{x_i} - nF(\tilde{\alpha})$$
 
 Enačbo lahko rešimo s programom Matlab z uporabo funkcije psi in dobimo:
-$$\hat{\alpha} = 1.0263 \ \ \ \text{in} \ \ \ \hat{\lambda} = 0.0128$$
+$$\tilde{\alpha} = 1.0263 \ \ \ \text{in} \ \ \ \tilde{\lambda} = 0.0128$$
+Dobljeni oceni po različnih metodah sta skoraj enaki. 
 
-\item Ocenjeni porazdelitvi dorišite na histogram. Je videti razumno?
-Na grafu je z roza barvo prikazana porazdelitev po metodi momentov in z modro barvo porazdelitev po metodi največjega verjetja. Porazdelitvi ujemata med sabo in s histogramom.
+\item Ocenjeni porazdelitvi dorišite na histogram. Je videti razumno? \\ \\
+Na sliki \ref{fig:por} je graf, kjer je z roza barvo prikazana porazdelitev po metodi momentov in z modro barvo porazdelitev po metodi največjega verjetja. Porazdelitvi se ujemata med sabo in s histogramom.
 \begin{figure}[h!]
 \centering
 \includegraphics[width=10cm]{histogram_porazdelitve3.png}
-\label{Histogram prehodnih časov z ocenjenima porazdelitvama}
+\caption{Histogram prehodnih časov z ocenjenima porazdelitvama}
+\label{fig:por}
 \end{figure}
 
 \item Histogram z dorisanima gostotama narišite še na logaritemski lestvici. Lestvico transformirajte le na abscisni osi, vendar pa ustrezno transformirajte tudi dorisani gostoti.
 
+Histogram na logaritemski lestvici je prikazan na sliki \ref{fig:log}.
+
 \begin{figure}[h!]
 \centering
 \includegraphics[width=9cm]{log_histogram3.png}
-\label{Histogram prehodnih časov na logaritemski lestvici}
+\caption{Histogram prehodnih časov na logaritemski lestvici}
+\label{fig:log}
 \end{figure}
 
-\item Je porazdelitev medprihodnih časov videti konsistentna s Poissonovim modelom, po katerem so ti časi porazdeljeni eksponentno? \\
-Da, glede na graf, bi porazdelitev medprehodnih časov lahko ustrezala tudi Poissonovi porazdelitvi. Prav tako smo prameter $\alpha$ v obeh primerih ocenili blizu 1, iz česar bi lahko rekli, da so medprehodni časi porazdeljeni Exp($\lambda$), za ustrezen $\lambda$.
+\item Je porazdelitev medprihodnih časov videti konsistentna s Poissonovim modelom, po katerem so ti časi porazdeljeni eksponentno? \\ \\
+Da, glede na graf bi porazdelitev medprehodnih časov lahko ustrezala tudi Poissonovi porazdelitvi. Prav tako smo prameter $\alpha$ v obeh primerih ocenili blizu 1, iz česar bi lahko rekli, da so medprehodni časi porazdeljeni Exp($\lambda$), za ustrezen $\lambda$.
 \end{enumerate}
 
 \large{4. NALOGA} \\ \\
 Recimo, da opazimo eno vrednost statistične spremenljivke X, porazdeljene enakomerno na intervalu $[0, \theta]$. Preizkusimo ničelno domnevo $H_0 : \theta = 1$ proti alternativni domnevi $H_1: \theta=2$.
+
 \begin{enumerate}[label=(\alph*)]
 \item Poiščite preizkus, ki ima stopnjo tveganja $\alpha = 0$. Kolikšna je njegova moč? \\ \\
-Ker je X porazdeljena enakomerno, je funkcija verjetja enaka:
-$$L(\theta, x) = \frac{1}{\theta}$$
 
+Če je $\alpha = 0$, potem zagotovo ne bomo zavrgli ničelne hipoteze. Za X ki je porazdeljen enakomerno na $[0,1]$ ($\theta=0$), velja:
+$$ \alpha = P(X > 1 | H_{0}) = 0$$.
+Moč testa je verjetnost zavrnitve ničelne hipoteze v primeru, ko je ta v resnici napačna:
+$$P(X < 1 | H_{1}) = \int_{0}^{1} f_X(x) dx = \int_{0}^{1} \frac{1}{2}dx = \frac{1}{2} $$
+
+\item Za $0 < t < 1$ si oglejte preizkus, ki ničelno domnevo zavrne pri $X \leqslant t$. Kolikšni
+sta njegova stopnja tveganja in moč? \\ \\
+Stopnja tveganja:
+$$P(X \in [0,t] | H_{0}) = \int_{0}^{t} f_X(x) dx = \int_{0}^{t} dx = t $$
+Moč testa:
+$$P(X\in [t, 2] | H_{1}) = \int_{t}^{2} f_X(x)dx = \int_{t}^{2} \frac{1}{2} dx =1- \frac{t}{2} $$
+
+\item Naj bo spet $0 < t < 1$. Kolikšni sta stopnja tveganja in moč preizkusa, ki
+ničelno domnevo zavrne pri $X \geqslant 1-t$ ? \\ \\
+Stopnja tveganja: 
+$$P(X \in [1-t,1] | H_{0}) = \int_{1-t}^{1} f_X(x) dx = \int_{1-t}^{1} dx = t $$
+Moč preizkusa:
+\begin{multline*} P(X\in [0,1-t] | H_{1}) + P(X\in [1,2] | H_{1})= \int_{0}^{1-t} f_X(x)dx +  \int_{1}^{2} f_X(x)dx =  \\\int_{0}^{1-t} \frac{1}{2} dx +  \int_{1}^{2} \frac{1}{2} dx= \frac{1-t}{2} + 1 - \frac{1}{2} = 1- \frac{t}{2} $$
+\end{multline*}
+\item Poiščite še kakšen preizkus, ki ima enako stopnjo tveganja in moč kot tisti iz
+prejšnje točke. \\ \\
+Očitno je primer takšnega preizkusa, preizkus iz točke b). Preizkusa sta različna, imata pa enko stopnjo tveganja in moč preizkusa.
+
+\item Določite območje zavrnitve pri preizkusu na podlagi razmerja verjetij v odvisnosti od predpisane maksimalne stopnje tveganja. Kdaj je ta preizkus eksakten? \\ \\
+$$\Lambda = \frac{P(X|H_{0})}{P(X|H_{1})} = \frac{f_X(x|H_0)}{f_X(x|H_{1})} = \left\{
+  \begin{array}{lr}
+    2, & x \in [0,1]\\
+    0, & x \in (1,2]
+  \end{array}
+\right.  $$
+Če je $\alpha = 0$ bomo ničelno hipotezo zagotovo zavrnili. Če je $\alpha > 0$, potem ničelno hipotezo zavrnemo, ko je $X \geqslant c$, za nek $c<1$.
+$$\alpha = P(X \geqslant c | H_{0}) = \int_{c}^{\infty} f_X(x) dx = \int_{c}^{1} dx =1-c $$
+Zato je $c = 1-\alpha$, kar pomeni, da je območje zavrnitve:
+$$X \geqslant 1-\alpha$$
+
+\item Kaj se zgodi s preizkusom na podlagi razmerja verjetij, če ničelno in alternativno domnevo zamenjamo, torej preizkusimo $H_{0}$ : $\theta = 2$ proti $H_1$ : $\theta = 1$ ?
+$$\Lambda = \frac{P(X|H_{0})}{P(X|H_{1})} = \frac{f_X(x|H_0)}{f_X(x|H_{1})} = \left\{
+  \begin{array}{lr}
+    \frac{1}{2}, & x \in [0,1]\\
+    \infty, & x \in (1,2]
+  \end{array}
+\right.  $$
+
+
+\item Za situacijo iz prejšnje točke predlagajte še kakšen drug, eksakten preizkus in primerjajte moči obeh preizkusov.
 
 \end{enumerate}
 

@@ -1,1 +1,0 @@
-data3 = read.csv("ZarkiGama.csv", sep = " ")

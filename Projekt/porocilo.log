@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.6)  14 AUG 2020 12:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.7.6)  15 AUG 2020 18:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -413,6 +413,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
 <Intervali_zaupanja800.png, id=22, 721.69624pt x 319.1925pt>
 File: Intervali_zaupanja800.png Graphic file (type png)
 <use Intervali_zaupanja800.png>
@@ -444,14 +449,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--128
  []
 
 
-Overfull \hbox (1.04465pt too wide) detected at line 130
-[] \OT1/lmr/m/n/12 = \OML/lmm/m/it/12 w[][] \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 
-w[][] \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 w[][] \OT1/lmr/m/n/12 = 0\OML/lmm/m/it
-/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12 ^^B \OT1/lmr/m/n/12 98\OML/lmm/m/it/12 
-:\OT1/lmr/m/n/12 3 + 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12 ^^B 
-\OT1/lmr/m/n/12 187\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 5 + 0\OML/lmm/m/it/12 :\OT
-1/lmr/m/n/12 2 \OMS/lmsy/m/n/12 ^^B \OT1/lmr/m/n/12 305\OML/lmm/m/it/12 :\OT1/l
-mr/m/n/12 6 = 175\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 44
+Overfull \hbox (27.54527pt too wide) detected at line 130
+[] \OT1/lmr/m/n/12 = [] = \OML/lmm/m/it/12 w[][] \OT1/lmr/m/n/12 + \OML/lmm/m/i
+t/12 w[][] \OT1/lmr/m/n/12 + \OML/lmm/m/it/12 w[][] \OT1/lmr/m/n/12 = 0\OML/lmm
+/m/it/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12 ^^B \OT1/lmr/m/n/12 98\OML/lmm/m/i
+t/12 :\OT1/lmr/m/n/12 3 + 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 4 \OMS/lmsy/m/n/12
+ ^^B \OT1/lmr/m/n/12 187\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 5 + 0\OML/lmm/m/it/12
+ :\OT1/lmr/m/n/12 2 \OMS/lmsy/m/n/12 ^^B \OT1/lmr/m/n/12 305\OML/lmm/m/it/12 :\
+OT1/lmr/m/n/12 6 = 175\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 44
  []
 
 [3 <./Intervali_zaupanja800.png>]
@@ -465,89 +470,149 @@ lmsy/m/n/12 ^^@ \OT1/lmr/m/n/12 98\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 3)[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
 
  []
 
-<histogram3.png, id=31, 562.2606pt x 421.575pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--167
+
+ []
+
+[4]
+<histogram3.png, id=34, 562.2606pt x 421.575pt>
 File: histogram3.png Graphic file (type png)
 <use histogram3.png>
-Package pdftex.def Info: histogram3.png  used on input line 170.
+Package pdftex.def Info: histogram3.png  used on input line 171.
 (pdftex.def)             Requested size: 284.52756pt x 213.33432pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] [5 <./histogram3.png (PNG copy)>]
-<histogram_porazdelitve3.png, id=40, 562.2606pt x 421.575pt>
+ [5 <./histogram3.png (PNG copy)>]
+<histogram_porazdelitve3.png, id=38, 562.2606pt x 421.575pt>
 File: histogram_porazdelitve3.png Graphic file (type png)
 <use histogram_porazdelitve3.png>
-Package pdftex.def Info: histogram_porazdelitve3.png  used on input line 199.
+Package pdftex.def Info: histogram_porazdelitve3.png  used on input line 202.
 (pdftex.def)             Requested size: 284.52756pt x 213.33432pt.
-<log_histogram3.png, id=41, 562.2606pt x 421.575pt>
-File: log_histogram3.png Graphic file (type png)
-<use log_histogram3.png>
-Package pdftex.def Info: log_histogram3.png  used on input line 207.
-(pdftex.def)             Requested size: 256.0748pt x 192.00346pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--206
+
+ []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<log_histogram3.png, id=39, 562.2606pt x 421.575pt>
+File: log_histogram3.png Graphic file (type png)
+<use log_histogram3.png>
+Package pdftex.def Info: log_histogram3.png  used on input line 213.
+(pdftex.def)             Requested size: 256.0748pt x 192.00346pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 215--217
-
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
-[6 <./histogram_porazdelitve3.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
-[7 <./log_histogram3.png (PNG copy)>]
-Overfull \hbox (7.44197pt too wide) detected at line 267
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
+
+ []
+
+[7 <./histogram_porazdelitve3.png (PNG copy)> <./log_histogram3.png (PNG copy)>
+]
+Underfull \hbox (badness 10000) in paragraph at lines 233--236
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 240--243
+
+ []
+
+
+Overfull \hbox (48.59462pt too wide) detected at line 246
+ []$[]  \OML/lmm/m/it/12 P\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 X \OMS/lmsy/m/n/12 
+2 \OT1/lmr/m/n/12 [0\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 1 \OMS/lmsy/m/n/12 ^^@ \
+OML/lmm/m/it/12 t\OT1/lmr/m/n/12 ]\OMS/lmsy/m/n/12 j\OML/lmm/m/it/12 H[]\OT1/lm
+r/m/n/12 ) + \OML/lmm/m/it/12 P\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 X \OMS/lmsy/m/
+n/12 2 \OT1/lmr/m/n/12 [1\OML/lmm/m/it/12 ; \OT1/lmr/m/n/12 2]\OMS/lmsy/m/n/12 
+j\OML/lmm/m/it/12 H[]\OT1/lmr/m/n/12 ) = [][] \OML/lmm/m/it/12 f[]\OT1/lmr/m/n/
+12 (\OML/lmm/m/it/12 x\OT1/lmr/m/n/12 )\OML/lmm/m/it/12 dx \OT1/lmr/m/n/12 + []
+[] \OML/lmm/m/it/12 f[]\OT1/lmr/m/n/12 (\OML/lmm/m/it/12 x\OT1/lmr/m/n/12 )\OML
+/lmm/m/it/12 dx \OT1/lmr/m/n/12 =$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--250
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--252
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 276--278
+
+ []
+
+[9]
+Overfull \hbox (7.44197pt too wide) detected at line 318
 \OML/lmm/m/it/12 r[] \OT1/lmr/m/n/12 = [] = 1 \OMS/lmsy/m/n/12 ^^@ [] \OT1/lmr/
 m/n/12 = []\OML/lmm/m/it/12 :
  []
 
 
-Overfull \hbox (38.43579pt too wide) detected at line 275
+Overfull \hbox (38.43579pt too wide) detected at line 326
  []$[]  \OML/lmm/m/it/12 r[] \OT1/lmr/m/n/12 = [] = [] = [] = []  $ 
  []
 
-[8] [9] (./porocilo.aux) ) 
+[10] [11] (./porocilo.aux) ) 
 Here is how much of TeX's memory you used:
- 4850 strings out of 480608
- 68084 string characters out of 5903631
- 325599 words of memory out of 5000000
- 20655 multiletter control sequences out of 15000+600000
+ 4849 strings out of 480608
+ 67845 string characters out of 5903631
+ 325553 words of memory out of 5000000
+ 20654 multiletter control sequences out of 15000+600000
  572083 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  32i,11n,37p,313b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/l
-m/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.en
-c}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
-cal/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/20
-20/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2020/texmf-d
-ist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/typ
-e1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/
-lm/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmex10
-.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr
-/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texl
-ive/2020/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/p
-ublic/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr
-8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></us
-r/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on porocilo.pdf (10 pages, 297691 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips
+/lm/lm-rm.enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathit.
+enc}{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/
+local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/
+2020/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2020/texmf
+-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/t
+ype1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
+c/lm/lmcsc10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmex
+10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/
+fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/lm/lmr6.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/l
+mr8.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></
+usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2020
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on porocilo.pdf (12 pages, 319071 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 117 PDF objects out of 1000 (max. 8388607)
+ 81 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

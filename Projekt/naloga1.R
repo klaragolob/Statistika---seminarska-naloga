@@ -13,7 +13,7 @@ library(ggplot2)
 # o 48.886 družinah, ki stanujejo v mestu Kobarid
 
 
-setwd("~/Documents/FAKS/Statistika/11_sem_nal_Klara_Golob")
+setwd("~/Documents/FAKS/Statistika/Statistika---seminarska-naloga/Projekt")
 data1 <- read.table("Kibergrad.csv", header = TRUE, sep = ",")
 N <- nrow(data1)  #stevilo vseh podatkov
 
@@ -47,16 +47,16 @@ zg_meja
 #pokrije populacijsko povprečje?
 
 st_otrok_p <- data1$OTROK
-povp_st_otrok_p <- sum(st_otrokP) / n
+povp_st_otrok_p <- mean(st_otrok_p)
 napaka_p <- sqrt(sum(mapply(st_otrok_p,FUN =function(x) (povp_st_otrok_p-x)^2))*1/N^2*(1-N/N))
 povp_st_otrok_p
 napaka_p
-abs(povp_st_otrokP - povp_st_otrok)
+abs(povp_st_otrok_p - povp_st_otrok)
 abs(napaka_p - napaka)
+
 #d) Vzemite še 99 enostavnih slučajnih vzorcev in prav tako za vsakega določite 
 #95% interval zaupanja. Narišite intervale zaupanja, ki pripadajo tem 100 vzorcem. 
 #Koliko jih pokrije populacijsko povprečje?
-
 
 # Standardne napake in povprecja za vseh 100 vzorcev
 povprecja <- povp_st_otrok
@@ -72,6 +72,7 @@ for (i in 2:100) {
   napake <- c(napake, napaka_i)
 }
 napake
+
 # Spodnja meja za interval zaupanja
 sp_meje <- povprecja[1] - koef * napake[1] 
 for (i in 2:100) {
@@ -104,6 +105,7 @@ for (i in 1:100) {
 
 t
 
+#intervale zaupanja shranimo v csv datoteko
 write.table(podatki, file="intervali_zaupanja.csv", quote=FALSE, col.names=c('Zgornja meja', 'Spodnja meja'), row.names=FALSE,sep=",")
 
 #e) Izračunajte standardni odklon vzorčnih povprečij za 100 prej dobljenih vzorcev.
@@ -172,4 +174,13 @@ for (i in 1:100) {
 t2
 
 write.table(podatki2, file="intervali_zaupanja2.csv", quote=FALSE, col.names=c('Zgornja meja', 'Spodnja meja'), row.names=FALSE,sep=",")
+standardni_odklon2 <- 0
+for (i in 1:100) {
+  standardni_odklon2 <- standardni_odklon2 + (povprecja2[i]  - mean(povprecja2))^2
+}
+standardni_odklon2 <- sqrt(standardni_odklon2 / 100)
 
+standardni_odklon2
+napaka2
+
+abs(standardni_odklon2 - napaka2)
